@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Code Learning Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <a class="home" href="#">Home</a>
+            <a class="modules" href="#" onclick="goToModules()">Modules</a>
+            <a class="contest" href="#" onclick="goToContest()">Contest</a>
+            <a class="resources" href="#" onclick="goToResources()">Resources</a>
+            <div class="community">
+                <button class="community_button">Community 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+              <div class="communities">
+                <a href="#"onclick="goToforum()">Forums</a>
+                <a href="#">Discord</a>
+                <a href="#">Stories</a>
+              </div>
+            </div> 
+            <div class="nav-right">
+                
+                <a href="#">Search</a>
+                <a href="#">About</a>
+                <a href="#">Login</a>
+                <a href="#">Register</a>
+            
+            </div>
+        </div>
+    </header>
+    <div class="forum-container">
+        <h1>Forum</h1>
+        <div class="question-list">
+          <div class="question">
+            <h2>How to fix a syntax error in Python?</h2>
+            <p>I'm getting a syntax error in my Python code and I'm not sure how to fix it. Can someone help me?</p>
+            <a href="#">Read More</a>
+          </div>
+          <div class="question">
+            <h2>What is the best IDE for web development?</h2>
+            <p>I'm new to web development and I'm wondering which IDE is the most recommended for web development projects.</p>
+            <a href="#">Read More</a>
+          </div>
+          <!-- Thêm các câu hỏi khác vào đây -->
+        </div>
+      </div>
+      
+    <footer>
+        <div class = "footer-left">
+            <p>&copy; MasterCode is a non-profit coding learning platform</p>
+            <p> Our target is to provide an interesting and meticulous learning environment
+                via videos and practices - all freely available
+            </p>
+            <p> Donations given to us will be used for educational videos, servers, services
+                and staffs.
+            </p>
+            <p> <a href="#", class="donation">You can make donations here</a</p>
+        </div>
+    </footer>
+    <script>
+        function goToModules() {
+            window.location.href = "modules.html"; // Điều hướng đến trang giao diện "modules.html"
+        }
+        function goToResources() {
+            window.location.href = "resources.html"; // Điều hướng đến trang giao diện "modules.html"
+        }
+    </script>
+</body>
+</html>
