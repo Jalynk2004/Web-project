@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Simple Responsive Website in HTML CSS</title>
+        <link rel="stylesheet" href="style2.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Sono:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href="css/templatemo-pod-talk.css" rel="stylesheet">
+        
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    
+    
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    
+    
+        <script src="../custom-scripts.js" defer></script>
+        <style>
+          body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+          body {font-size: 16px;}
+          img {margin-bottom: -8px;}
+          .mySlides {display: none;}
+          </style>
+      </head>
+<body>
+    <main>
+    <header>
+        <div class="nav">
+          <a class="home" href="/" >Home</a>
+          <a class="modules" href="/Modules" onclick="goToModules()">Modules</a>
+          <a class="Exercises" href="/Exercises" onclick="goToContest()">Exercises</a>
+          
+          <div class="community">
+              <button class="community_button">Community 
+                <i class="fa fa-caret-down"></i>
+              </button>
+            <div class="communities">
+              <a href="#" onclick="goToforum()">Forums</a>
+              <a href="https://discord.gg/aV9B6jeG8Y">Discord</a>
+              <a href="#">Stories</a>
+              <a href="/TTK">TTK</a>
+            </div>
+          </div> 
+          <form action="#" method="get" class="search-form">
+            <div class="input-group">
+              <input name="search" type="search" class="form-control" id="search" placeholder="Search..." aria-label="Search">
+              <button type="submit" class="btn btn-primary">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </form>
+          <div class="nav-right">
+            <a href="/Our-team" onclick="gotoOurteam()">Our team</a>
+            <div class="user-menu" style="display: none;">
+              <button class="user-menu_button" id="userWelcome">
+                <span id="username"></span>
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="user-menu_dropdown" id="userDropdown">
+                <a href="/logout" id="logoutButton">Logout</a>
+              </div>
+            </div>
+            <a href="/login" id="loginButton">Login/Register</a>
+          </div>
+
+      </div>
+      </header>
+ 
+
+ 
+  <div class="w3-row-padding" id="about">
+    <div class="w3-col l4 12">
+      <h3>Our team</h3>
+      <h6>Doi ngu cong ty chung toi bao gom nhung thay co va cac ban tre giau nhiet huyet, nhieu kinh nghiem trong viec truyen tai cac kien thuc ve lap trinh </h6>
+   
+    </div>
+    <div class="w3-col l8 12">
+      <!-- Image of location/map -->
+      <img src="lop.jpg" class="w3-image w3-greyscale" style="width:100%;">
+    </div>
+  </div>
+    </main>
+  <section class="hero-section">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-12 col-12">
+                <div class="text-center mb-5 pb-2">
+                    <h1 class="text-white">Lecturer</h1>
+
+                    <p class="text-white">Here is the list of our lecturers.</p>
+
+                    <a href="#section_2" class="btn custom-btn smoothscroll mt-3">Start studying</a>
+                </div>
+  <div class="owl-carousel owl-theme">
+    <div class="owl-carousel-info-wrap item">
+        <img src="images/profile/tien huy.jpg" class="owl-carousel-image img-fluid" alt="">
+
+        <div class="owl-carousel-info">
+            <h4 class="mb-2">
+                Tien Huy
+                <img src="images/verified.png" class="owl-carousel-verified-image img-fluid" alt="">
+            </h4>
+
+            <span class="badge">HTML</span>
+
+            <span class="badge">Business</span>
+        </div>
+
+        <div class="social-share">
+            <ul class="social-icon">
+                <li class="social-icon-item">
+                    <a href="#" class="social-icon-link bi-twitter"></a>
+                </li>
+
+                <li class="social-icon-item">
+                    <a href="#" class="social-icon-link bi-facebook"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="owl-carousel-info-wrap item">
+        <img src="images/profile/handsome-asian-man-listening-music-through-headphones.jpg" class="owl-carousel-image img-fluid" alt="">
+
+        <div class="owl-carousel-info">
+            <h4 class="mb-2">
+                William
+                <img src="images/verified.png" class="owl-carousel-verified-image img-fluid" alt="">
+            </h4>
+
+            <span class="badge">Creative</span>
+
+            <span class="badge">Design</span>
+        </div>
+
+        <div class="social-share">
+            <ul class="social-icon">
+                <li class="social-icon-item">
+                    <a href="#" class="social-icon-link bi-twitter"></a>
+                </li>
+
+                <li class="social-icon-item">
+                    <a href="#" class="social-icon-link bi-facebook"></a>
+                </li>
+
+                <li class="social-icon-item">
+                    <a href="#" class="social-icon-link bi-pinterest"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="owl-carousel-info-wrap item">
+        <img src="images/profile/cute-smiling-woman-outdoor-portrait.jpg" class="owl-carousel-image img-fluid" alt="">
+
+        <div class="owl-carousel-info">
+            <h4 class="mb-2">Taylor</h4>
+
+            <span class="badge">Modeling</span>
+
+            <span class="badge">Fashion</span>
+        </div>
+
+        <div class="social-share">
+            <ul class="social-icon">
+                <li class="social-icon-item">
+                    <a href="#" class="social-icon-link bi-twitter"></a>
+                </li>
+
+                <li class="social-icon-item">
+                    <a href="#" class="social-icon-link bi-facebook"></a>
+                </li>
+
+                <li class="social-icon-item">
+                    <a href="#" class="social-icon-link bi-pinterest"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="owl-carousel-info-wrap item">
+        <img src="images/profile/gialinh.jpg" class="owl-carousel-image img-fluid" alt="">
+
+        <div class="owl-carousel-info">
+            <h4 class="mb-2">Gia Linh</h4>
+
+            <span class="badge">Java</span>
+        </div>
+
+        <div class="social-share">
+            <ul class="social-icon">
+                <li class="social-icon-item">
+                    <a href="#" class="social-icon-link bi-instagram"></a>
+                </li>
+
+                <li class="social-icon-item">
+                    <a href="#" class="social-icon-link bi-youtube"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="owl-carousel-info-wrap item">
+        <img src="images/profile/phongphan.jpg" class="owl-carousel-image img-fluid" alt="">
+
+        <div class="owl-carousel-info">
+            <h4 class="mb-2">
+                Huu Phong
+                <img src="images/verified.png" class="owl-carousel-verified-image img-fluid" alt="">
+            </h4>
+
+            <span class="badge">Computer Vision</span>
+            
+        </div>
+      
+        <div class="social-share">
+            <ul class="social-icon">
+                <li class="social-icon-item">
+                    <a href="#" class="social-icon-link bi-instagram"></a>
+                </li>
+
+                <li class="social-icon-item">
+                    <a href="#" class="social-icon-link bi-youtube"></a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+
+    <div class="owl-carousel-info-wrap item">
+        <img src="images/profile/tkt.jpg" class="owl-carousel-image img-fluid" alt="">
+
+        <div class="owl-carousel-info">
+            <h4 class="mb-2">Tuan Khoa</h4>
+
+            <span class="badge">C++</span>
+        </div>
+
+        <div class="social-share">
+            <ul class="social-icon">
+                <li class="social-icon-item">
+                    <a href="#" class="social-icon-link bi-linkedin"></a>
+                </li>
+
+                <li class="social-icon-item">
+                    <a href="#" class="social-icon-link bi-whatsapp"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+<div class="w3-panel w3-red w3-leftbar w3-padding-32">
+    <h6><i class="fa fa-info w3-deep-orange w3-padding w3-margin-right"></i> Chung toi chi co mot trang web chinh thuc la :.Moi trang web khac deu la gia mao. Xin luu y!</h6>
+  </div>
+
+  <div class="w3-container">
+    <h3>About us</h3>
+    <h6>&copy;MasterCode is a non-profit coding learning platform</h6>
+    <h6> Our target is to provide an interesting and meticulous learning environment
+      via videos and practices - all freely available
+    </h6>
+  <h6> Donations given to us will be used for educational videos, servers, services
+      and staffs.
+  </h6>
+  <h6> <a href="#", class="donation">You can make donations here</a></h6>
+  <div class="w3-col l8 12">
+    <!-- Image of location/map -->
+    <img src="mastercode.png" class="w3-image w3-greenscale" style="width:100%;">
+  </div>
+  </div>
+  
+ 
+
+  
+
+  <div class="w3-container" id="contact">
+    <h2>Contact</h2>
+    <h5>If you have any questions, do not hesitate to ask them.</h5>
+    <i class="fa fa-map-marker w3-text-red" style="width:30px"></i> Thu Duc, TPHCM<br>
+    <i class="fa fa-phone w3-text-red" style="width:30px"></i> Phone: 0942942172<br>
+    <i class="fa fa-envelope w3-text-red" style="width:30px"> </i> Email: 22520692@gm.uit.edu.vn<br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p><button class="w3-button w3-black w3-padding-large" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-padding-32 w3-black w3-center w3-margin-top" >
+  
+  <h5>Find Us On</h5>
+  <div class="w3-xlarge w3-padding-16">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/custom.js"></script>
+<script>
+      
+    document.addEventListener("DOMContentLoaded", function() {
+      checkLoginStatus();
+    });
+
+    function checkLoginStatus() {
+  fetch("/checkLoginStatus")
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(data) {
+      if (data.loggedIn) {
+        document.getElementById("username").textContent = data.username;
+        document.querySelector(".user-menu").style.display = "inline-block";
+        document.getElementById("loginButton").style.display = "none";
+      } else {
+        document.querySelector(".user-menu").style.display = "none";
+        document.getElementById("loginButton").style.display = "inline";
+      }
+    })
+    .catch(function(error) {
+      console.error(error);
+    });
+}
+document.getElementById("userWelcome").addEventListener("click", function() {
+  const dropdown = document.getElementById("userDropdown");
+  dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+});
+
+window.addEventListener("click", function(event) {
+  if (!event.target.matches('.user-menu_button')) {
+    const dropdowns = document.getElementsByClassName("user-menu_dropdown");
+    for (let i = 0; i < dropdowns.length; i++) {
+      const openDropdown = dropdowns[i];
+      if (openDropdown.style.display === "block") {
+        openDropdown.style.display = "none";
+      }
+    }
+  }
+});
+
+  </script>
+
+  </script>
+    <script>
+      const header = document.querySelector("header");
+      const menuToggler = document.querySelectorAll("#menu_toggle");
+
+      menuToggler.forEach(toggler => {
+        toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+      });
+    </script>
+    <style>
+      .user-menu {
+        float: left;
+  overflow: hidden;
+}
+
+.user-menu_button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.user-menu_dropdown {
+  display: none;
+  position: absolute;
+  background-color: #236b94;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.user-menu_dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.user-menu_dropdown a:hover {
+  background-color: #f1f1f1;
+}
+
+.user-menu_button:hover .user-menu_dropdown {
+  display: block;
+}
+.community {
+  float: left;
+  overflow: hidden;
+}
+
+.community .community_button {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  margin: 0;
+}
+
+.community:hover .community_button {
+  background-color: rgb(10, 29, 58);
+}
+
+.communities {
+  display: none;
+  position: absolute;
+  background-color: #236b94;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.communities a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.communities a:hover {
+  background-color: #ddd;
+}
+
+.community:hover .communities {
+  display: block;
+}
+.testimonial-carousel::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    z-index: 1;
+}
+
+.testimonial-carousel::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .testimonial-carousel::before,
+    .testimonial-carousel::after {
+        width: 200px;
+    }
+}
+
+@media (min-width: 992px) {
+    .testimonial-carousel::before,
+    .testimonial-carousel::after {
+        width: 300px;
+    }
+}
+
+.testimonial-carousel .owl-item .testimonial-text,
+.testimonial-carousel .owl-item.center .testimonial-text * {
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-text {
+    background: var(--primary) !important;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-text * {
+    color: #FFFFFF !important;
+}
+
+.testimonial-carousel .owl-dots {
+    margin-top: 24px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.testimonial-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #CCCCCC;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-dot.active {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+  #about {
+    margin-top: 100px; /* Đảm bảo khoảng cách từ header đến phần tử about */
+  }
+
+
+    </style>
+</body>
+
+</html>

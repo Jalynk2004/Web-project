@@ -1,0 +1,1696 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Responsive Website in HTML CSS</title>
+    <link rel="stylesheet" href="style2.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">    
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Sono:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap-icons.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link href="css/templatemo-pod-talk.css" rel="stylesheet">
+
+
+
+
+
+
+
+<link href="/main/styles?v=91BVxZV_9PA0T2wD1H04aMeKIP9YCyil_IdP6-QRKDY1" rel="stylesheet"/>
+
+
+    
+
+<link href="/styles/common?v=mjfzwyxul6gbnDVQmoNbszXxFbDZ9PtP-RQfZsN9oLA1" rel="stylesheet"/>
+
+
+<link href="/css/cmt?v=iFnEdsc0aWB7ErYBJCquEdtuLN598jdqlemVQiSAWT81" rel="stylesheet"/>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
+
+
+
+
+    
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <script src="../custom-scripts.js" defer></script>
+    <style>
+      body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+      body {font-size: 16px;}
+      img {margin-bottom: -8px;}
+      .mySlides {display: none;}
+      </style>
+  </head>
+  <body>
+   
+      <!-- Header Start -->
+      <header>
+        <div class="nav">
+          <a class="home" href="#" onclick="goTohome()">Home</a>
+          <a class="modules" href="#" onclick="goToModules()">Modules</a>
+          <a class="contest" href="#" onclick="goToContest()">Exercises</a>
+          <a class="resources" href="#" onclick="goToResources()">Resources</a>
+          <div class="community">
+              <button class="community_button">Community 
+                <i class="fa fa-caret-down"></i>
+              </button>
+            <div class="communities">
+              <a href="#" onclick="goToforum()">Forums</a>
+              <a href="#">Discord</a>
+              <a href="#">Stories</a>
+            </div>
+          </div> 
+          <form action="#" method="get" class="custom-form search-form flex-fill me-3" role="search">
+              <div class="input-group input-group-lg">    
+                  <input name="search" type="search" class="form-control" id="search" placeholder="Search " aria-label="Search">
+  
+                  <button type="submit" class="form-control" id="submit">
+                      <i class="bi-search"></i>
+                  </button>
+              </div>
+          </form>
+          <div class="nav-right">
+              
+          
+              <a href="#" onclick="gotoOurteam">Our team</a>
+              <a href="#" onclick="goTologin()">Login/Register</a>
+              
+          
+          </div>
+      </div>
+      </header>
+      <div class="bg-image" style="background-image: url('images/profile/code.jpg');margin-top:100px;">
+        <div class="bg-black-op">
+
+                <div class="py-50 mt-20">
+                    <div class="d-lg-flex justify-content-between align-items-center">
+                        <div>
+                          <h3 class="h2 text-white font-w700 mb-10" style="color: white;">Hỏi đáp</h3>
+                            <h2 class="h5 text-white-op font-w400 mb-lg-0" style="color: white;">Chia sẻ kiến thức, cùng nhau phát triển</h2>
+                        </div>
+                        <div>
+                            <a href="#" data-toggle="btn-create-question" class="btn btn-primary" style="color: white;" ><i class="far fa-question-circle fa-fw"></i> Đặt câu hỏi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+  <div class="block block-bordered mb-10">
+                <div class="block-content block-content-full tab-content overflow-hidden">
+                    <!-- Results -->
+                        <div class="question-summary">
+                            <div class="counts">
+                                <div class="counts-votes">
+                                    <div class="counts-votes-num">
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-up fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-down fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counts-votes-arrow">
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-up fa-fw"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-down fa-fw"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="counts-answered ">
+                                    <div class="mini-counts"><span>0</span></div>
+                                    <span>trả lời</span>
+                                </div>
+
+                                <div class="counts-views text-danger">
+                                    <div class="mini-counts"><span>115</span></div>
+                                    <span>lượt xem</span>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <a href="/q/lam-the-nao-tao-duoc-box-widget-do-54380">
+                                    <h4 class="h5 mb-5">
+                                        <span class="mark-lookup">Làm thế nào tạo được box widget đó</span>
+                                    </h4>
+                                </a>
+                                <div class="mb-5">
+                                    
+    <a href="/tags/python-7" class="post-tag">python</a>
+    <a href="/tags/python-27-64" class="post-tag">python-2.7</a>
+    <a href="/tags/machine-learning-349" class="post-tag">machine-learning</a>
+    <a href="/tags/decisiontrees-49272" class="post-tag">decisiontrees</a>
+
+                                </div>
+                                <div class="font-size-xs mb-5 text-muted">
+                                    <span>
+                                        <a href="/users/8a417239-4ab8-48fc-b87e-174314cc8b30">
+                                            <img src="/Content/images/avatar/avatar.png" class="avatar-xs mr-5 d-inline">
+                                            <span>namjinkeyy</span>
+                                        </a>
+                                        <span>đ&#227; hỏi</span>
+                                        <em class="format-time font-w600" title=" 2024-04-27 23:52:46">2024-04-27 23:52:46</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="question-summary">
+                            <div class="counts">
+                                <div class="counts-votes">
+                                    <div class="counts-votes-num">
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-up fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-down fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counts-votes-arrow">
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-up fa-fw"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-down fa-fw"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="counts-answered ">
+                                    <div class="mini-counts"><span>0</span></div>
+                                    <span>trả lời</span>
+                                </div>
+
+                                <div class="counts-views text-danger">
+                                    <div class="mini-counts"><span>340</span></div>
+                                    <span>lượt xem</span>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <a href="/q/chia-de-tri-54379">
+                                    <h4 class="h5 mb-5">
+                                        <span class="mark-lookup">Chia để trị</span>
+                                    </h4>
+                                </a>
+                                <div class="mb-5">
+                                    
+    <a href="/tags/c-9" class="post-tag">c++</a>
+
+                                </div>
+                                <div class="font-size-xs mb-5 text-muted">
+                                    <span>
+                                        <a href="/users/bf08dd65-7bf8-4b12-8283-94a870c98d08">
+                                            <img src="/Content/images/avatar/avatar.png" class="avatar-xs mr-5 d-inline">
+                                            <span>minhtrixxx</span>
+                                        </a>
+                                        <span>đ&#227; hỏi</span>
+                                        <em class="format-time font-w600" title=" 2024-04-22 15:34:25">2024-04-22 15:34:25</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="question-summary">
+                            <div class="counts">
+                                <div class="counts-votes">
+                                    <div class="counts-votes-num">
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-up fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-down fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counts-votes-arrow">
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-up fa-fw"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-down fa-fw"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="counts-answered counts-bordered">
+                                    <div class="mini-counts"><span>1</span></div>
+                                    <span>trả lời</span>
+                                </div>
+
+                                <div class="counts-views text-danger">
+                                    <div class="mini-counts"><span>311</span></div>
+                                    <span>lượt xem</span>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <a href="/q/loi-python-giup-voi-a-54378">
+                                    <h4 class="h5 mb-5">
+                                        <span class="mark-lookup">lỗi python giúp với ạ</span>
+                                    </h4>
+                                </a>
+                                <div class="mb-5">
+                                    
+    <a href="/tags/help-51321" class="post-tag">@help</a>
+
+                                </div>
+                                <div class="font-size-xs mb-5 text-muted">
+                                    <span>
+                                        <a href="/users/f1fc8224-3ebc-45bb-ae73-0fb83a71cc41">
+                                            <img src="/Content/images/avatar/avatar.png" class="avatar-xs mr-5 d-inline">
+                                            <span>noalone2000</span>
+                                        </a>
+                                        <span>đ&#227; hỏi</span>
+                                        <em class="format-time font-w600" title=" 2024-04-18 12:01:54">2024-04-18 12:01:54</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="question-summary">
+                            <div class="counts">
+                                <div class="counts-votes">
+                                    <div class="counts-votes-num">
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-up fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-down fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counts-votes-arrow">
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-up fa-fw"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-down fa-fw"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="counts-answered ">
+                                    <div class="mini-counts"><span>0</span></div>
+                                    <span>trả lời</span>
+                                </div>
+
+                                <div class="counts-views text-danger">
+                                    <div class="mini-counts"><span>330</span></div>
+                                    <span>lượt xem</span>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <a href="/q/tao-class-c-54377">
+                                    <h4 class="h5 mb-5">
+                                        <span class="mark-lookup">TẠO CLASS C++</span>
+                                    </h4>
+                                </a>
+                                <div class="mb-5">
+                                    
+    <a href="/tags/c-9" class="post-tag">c++</a>
+
+                                </div>
+                                <div class="font-size-xs mb-5 text-muted">
+                                    <span>
+                                        <a href="/users/226aecdb-da90-4ff8-8306-50240ccfe021">
+                                            <img src="/Content/images/avatar/avatar.png" class="avatar-xs mr-5 d-inline">
+                                            <span>Nhan0123</span>
+                                        </a>
+                                        <span>đ&#227; hỏi</span>
+                                        <em class="format-time font-w600" title=" 2024-04-17 09:57:28">2024-04-17 09:57:28</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="question-summary">
+                            <div class="counts">
+                                <div class="counts-votes">
+                                    <div class="counts-votes-num">
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-up fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-down fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counts-votes-arrow">
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-up fa-fw"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-down fa-fw"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="counts-answered ">
+                                    <div class="mini-counts"><span>0</span></div>
+                                    <span>trả lời</span>
+                                </div>
+
+                                <div class="counts-views text-danger">
+                                    <div class="mini-counts"><span>357</span></div>
+                                    <span>lượt xem</span>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <a href="/q/fildena-to-manage-all-sexual-trauma-54376">
+                                    <h4 class="h5 mb-5">
+                                        <span class="mark-lookup">Fildena To Manage All Sexual Trauma</span>
+                                    </h4>
+                                </a>
+                                <div class="mb-5">
+                                    
+    <a href="/tags/fildena-51551" class="post-tag">fildena</a>
+
+                                </div>
+                                <div class="font-size-xs mb-5 text-muted">
+                                    <span>
+                                        <a href="/users/2b5e8375-60e7-44b7-9476-d80392f00dd3">
+                                            <img src="/Content/images/avatar/avatar.png" class="avatar-xs mr-5 d-inline">
+                                            <span>justinwilliams</span>
+                                        </a>
+                                        <span>đ&#227; hỏi</span>
+                                        <em class="format-time font-w600" title=" 2024-04-15 12:52:19">2024-04-15 12:52:19</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="question-summary">
+                            <div class="counts">
+                                <div class="counts-votes">
+                                    <div class="counts-votes-num">
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-up fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-down fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counts-votes-arrow">
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-up fa-fw"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-down fa-fw"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="counts-answered counts-bordered">
+                                    <div class="mini-counts"><span>1</span></div>
+                                    <span>trả lời</span>
+                                </div>
+
+                                <div class="counts-views text-danger">
+                                    <div class="mini-counts"><span>410</span></div>
+                                    <span>lượt xem</span>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <a href="/q/syntaxerror-unicode-error-unicodeescape-codec-cant-decode-bytes-in-position-2-3-malformed-n-54375">
+                                    <h4 class="h5 mb-5">
+                                        <span class="mark-lookup">SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: malformed \N character escape</span>
+                                    </h4>
+                                </a>
+                                <div class="mb-5">
+                                    
+    <a href="/tags/syntax-error-889" class="post-tag">syntax-error</a>
+
+                                </div>
+                                <div class="font-size-xs mb-5 text-muted">
+                                    <span>
+                                        <a href="/users/66dc2b77-6298-4229-966a-2a3400d7ff61">
+                                            <img src="/Content/images/avatar/avatar.png" class="avatar-xs mr-5 d-inline">
+                                            <span>Kietdptrai</span>
+                                        </a>
+                                        <span>đ&#227; hỏi</span>
+                                        <em class="format-time font-w600" title=" 2024-04-13 08:26:34">2024-04-13 08:26:34</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="question-summary">
+                            <div class="counts">
+                                <div class="counts-votes">
+                                    <div class="counts-votes-num">
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-up fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-down fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counts-votes-arrow">
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-up fa-fw"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-down fa-fw"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="counts-answered ">
+                                    <div class="mini-counts"><span>0</span></div>
+                                    <span>trả lời</span>
+                                </div>
+
+                                <div class="counts-views text-danger">
+                                    <div class="mini-counts"><span>307</span></div>
+                                    <span>lượt xem</span>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <a href="/q/hoi-mo-folder-bang-duong-dan-san-trong-texbox-54374">
+                                    <h4 class="h5 mb-5">
+                                        <span class="mark-lookup">Hỏi mở Folder bằng đường dẫn sẵn trong texbox</span>
+                                    </h4>
+                                </a>
+                                <div class="mb-5">
+                                    
+    <a href="/tags/c-3" class="post-tag">c#</a>
+
+                                </div>
+                                <div class="font-size-xs mb-5 text-muted">
+                                    <span>
+                                        <a href="/users/36b19bab-4871-4ddb-b2dd-d4b28a28c6ab">
+                                            <img src="/Content/images/avatar/avatar.png" class="avatar-xs mr-5 d-inline">
+                                            <span>mongluu87@gmail.com</span>
+                                        </a>
+                                        <span>đ&#227; hỏi</span>
+                                        <em class="format-time font-w600" title=" 2024-04-11 15:00:05">2024-04-11 15:00:05</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="question-summary">
+                            <div class="counts">
+                                <div class="counts-votes">
+                                    <div class="counts-votes-num">
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-up fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-down fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counts-votes-arrow">
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-up fa-fw"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-down fa-fw"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="counts-answered ">
+                                    <div class="mini-counts"><span>0</span></div>
+                                    <span>trả lời</span>
+                                </div>
+
+                                <div class="counts-views text-danger">
+                                    <div class="mini-counts"><span>272</span></div>
+                                    <span>lượt xem</span>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <a href="/q/quy-mo-va-canh-tranh-nguon-nhan-luc-o-can-tho-54373">
+                                    <h4 class="h5 mb-5">
+                                        <span class="mark-lookup">quy mô và cạnh tranh nguồn nhân lực ở cần thơ</span>
+                                    </h4>
+                                </a>
+                                <div class="mb-5">
+                                    
+    <a href="/tags/c-40-211" class="post-tag">c#-4.0</a>
+
+                                </div>
+                                <div class="font-size-xs mb-5 text-muted">
+                                    <span>
+                                        <a href="/users/a250acda-d049-44e7-b3d5-a9e1933f082e">
+                                            <img src="/Content/images/avatar/avatar.png" class="avatar-xs mr-5 d-inline">
+                                            <span>vinh trieu</span>
+                                        </a>
+                                        <span>đ&#227; hỏi</span>
+                                        <em class="format-time font-w600" title=" 2024-04-10 20:05:45">2024-04-10 20:05:45</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="question-summary">
+                            <div class="counts">
+                                <div class="counts-votes">
+                                    <div class="counts-votes-num">
+                                        <div class="mini-counts">
+                                            <span>1</span>
+                                            <i class="fas fa-caret-up fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-down fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counts-votes-arrow">
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-up fa-fw"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-down fa-fw"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="counts-answered ">
+                                    <div class="mini-counts"><span>0</span></div>
+                                    <span>trả lời</span>
+                                </div>
+
+                                <div class="counts-views text-danger">
+                                    <div class="mini-counts"><span>279</span></div>
+                                    <span>lượt xem</span>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <a href="/q/python-c-54372">
+                                    <h4 class="h5 mb-5">
+                                        <span class="mark-lookup">python c++</span>
+                                    </h4>
+                                </a>
+                                <div class="mb-5">
+                                    
+    <a href="/tags/hn-51547" class="post-tag">hn</a>
+
+                                </div>
+                                <div class="font-size-xs mb-5 text-muted">
+                                    <span>
+                                        <a href="/users/8dfe52f7-efdc-42cf-8336-a32493255cb2">
+                                            <img src="/Content/images/avatar/avatar.png" class="avatar-xs mr-5 d-inline">
+                                            <span>at1311</span>
+                                        </a>
+                                        <span>đ&#227; hỏi</span>
+                                        <em class="format-time font-w600" title=" 2024-04-09 19:28:40">2024-04-09 19:28:40</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="question-summary">
+                            <div class="counts">
+                                <div class="counts-votes">
+                                    <div class="counts-votes-num">
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-up fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-down fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counts-votes-arrow">
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-up fa-fw"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-down fa-fw"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="counts-answered ">
+                                    <div class="mini-counts"><span>0</span></div>
+                                    <span>trả lời</span>
+                                </div>
+
+                                <div class="counts-views text-danger">
+                                    <div class="mini-counts"><span>168</span></div>
+                                    <span>lượt xem</span>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <a href="/q/loi-kautohelper-54371">
+                                    <h4 class="h5 mb-5">
+                                        <span class="mark-lookup">lỗi KautoHelper</span>
+                                    </h4>
+                                </a>
+                                <div class="mb-5">
+                                    
+    <a href="/tags/adb-1095" class="post-tag">adb</a>
+
+                                </div>
+                                <div class="font-size-xs mb-5 text-muted">
+                                    <span>
+                                        <a href="/users/202f21bc-271a-4e2d-91c3-ec2034b03dff">
+                                            <img src="/Content/images/avatar/avatar.png" class="avatar-xs mr-5 d-inline">
+                                            <span>viethoang27</span>
+                                        </a>
+                                        <span>đ&#227; hỏi</span>
+                                        <em class="format-time font-w600" title=" 2024-04-09 17:47:29">2024-04-09 17:47:29</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="question-summary">
+                            <div class="counts">
+                                <div class="counts-votes">
+                                    <div class="counts-votes-num">
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-up fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-down fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counts-votes-arrow">
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-up fa-fw"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-down fa-fw"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="counts-answered counts-bordered">
+                                    <div class="mini-counts"><span>1</span></div>
+                                    <span>trả lời</span>
+                                </div>
+
+                                <div class="counts-views text-danger">
+                                    <div class="mini-counts"><span>193</span></div>
+                                    <span>lượt xem</span>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <a href="/q/loi-mo-file-python-54370">
+                                    <h4 class="h5 mb-5">
+                                        <span class="mark-lookup">lỗi mở file python</span>
+                                    </h4>
+                                </a>
+                                <div class="mb-5">
+                                    
+    <a href="/tags/python-7" class="post-tag">python</a>
+    <a href="/tags/python-3x-76" class="post-tag">python-3.x</a>
+
+                                </div>
+                                <div class="font-size-xs mb-5 text-muted">
+                                    <span>
+                                        <a href="/users/84cf27c1-ee9e-43b9-8f17-fb71dd9d5a66">
+                                            <img src="/Content/images/avatar/avatar.png" class="avatar-xs mr-5 d-inline">
+                                            <span>wibunguyen</span>
+                                        </a>
+                                        <span>đ&#227; hỏi</span>
+                                        <em class="format-time font-w600" title=" 2024-04-08 00:02:16">2024-04-08 00:02:16</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="question-summary">
+                            <div class="counts">
+                                <div class="counts-votes">
+                                    <div class="counts-votes-num">
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-up fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-down fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counts-votes-arrow">
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-up fa-fw"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-down fa-fw"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="counts-answered counts-bordered">
+                                    <div class="mini-counts"><span>1</span></div>
+                                    <span>trả lời</span>
+                                </div>
+
+                                <div class="counts-views text-danger">
+                                    <div class="mini-counts"><span>308</span></div>
+                                    <span>lượt xem</span>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <a href="/q/chay-python-54369">
+                                    <h4 class="h5 mb-5">
+                                        <span class="mark-lookup">Chạy Python</span>
+                                    </h4>
+                                </a>
+                                <div class="mb-5">
+                                    
+    <a href="/tags/python-7" class="post-tag">python</a>
+
+                                </div>
+                                <div class="font-size-xs mb-5 text-muted">
+                                    <span>
+                                        <a href="/users/d717e052-c0df-41ff-80a8-092c1cf429d8">
+                                            <img src="/Content/images/avatar/avatar.png" class="avatar-xs mr-5 d-inline">
+                                            <span>phucnm2k12</span>
+                                        </a>
+                                        <span>đ&#227; hỏi</span>
+                                        <em class="format-time font-w600" title=" 2024-04-07 20:57:05">2024-04-07 20:57:05</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="question-summary">
+                            <div class="counts">
+                                <div class="counts-votes">
+                                    <div class="counts-votes-num">
+                                        <div class="mini-counts">
+                                            <span>1</span>
+                                            <i class="fas fa-caret-up fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-down fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counts-votes-arrow">
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-up fa-fw"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-down fa-fw"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="counts-answered ">
+                                    <div class="mini-counts"><span>0</span></div>
+                                    <span>trả lời</span>
+                                </div>
+
+                                <div class="counts-views text-danger">
+                                    <div class="mini-counts"><span>235</span></div>
+                                    <span>lượt xem</span>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <a href="/q/tam-li-hoc-54368">
+                                    <h4 class="h5 mb-5">
+                                        <span class="mark-lookup">Tâm lí học</span>
+                                    </h4>
+                                </a>
+                                <div class="mb-5">
+                                    
+    <a href="/tags/net-17" class="post-tag">.net</a>
+
+                                </div>
+                                <div class="font-size-xs mb-5 text-muted">
+                                    <span>
+                                        <a href="/users/0a155598-d7ba-49a7-9322-a4f95578d541">
+                                            <img src="/Content/images/avatar/avatar.png" class="avatar-xs mr-5 d-inline">
+                                            <span>Nọc nọc</span>
+                                        </a>
+                                        <span>đ&#227; hỏi</span>
+                                        <em class="format-time font-w600" title=" 2024-04-06 23:57:02">2024-04-06 23:57:02</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="question-summary">
+                            <div class="counts">
+                                <div class="counts-votes">
+                                    <div class="counts-votes-num">
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-up fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-down fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counts-votes-arrow">
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-up fa-fw"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-down fa-fw"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="counts-answered counts-bordered">
+                                    <div class="mini-counts"><span>1</span></div>
+                                    <span>trả lời</span>
+                                </div>
+
+                                <div class="counts-views text-danger">
+                                    <div class="mini-counts"><span>218</span></div>
+                                    <span>lượt xem</span>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <a href="/q/tinh-tong-bang-c-54367">
+                                    <h4 class="h5 mb-5">
+                                        <span class="mark-lookup">tính tổng bằng c++</span>
+                                    </h4>
+                                </a>
+                                <div class="mb-5">
+                                    
+    <a href="/tags/lhpcoder-51546" class="post-tag">@lhpcoder</a>
+
+                                </div>
+                                <div class="font-size-xs mb-5 text-muted">
+                                    <span>
+                                        <a href="/users/c9ac5145-ac6e-4b76-9360-bf776af08378">
+                                            <img src="/Content/images/avatar/avatar.png" class="avatar-xs mr-5 d-inline">
+                                            <span>chuzztran</span>
+                                        </a>
+                                        <span>đ&#227; hỏi</span>
+                                        <em class="format-time font-w600" title=" 2024-04-06 20:24:14">2024-04-06 20:24:14</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="question-summary">
+                            <div class="counts">
+                                <div class="counts-votes">
+                                    <div class="counts-votes-num">
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-up fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-down fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counts-votes-arrow">
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-up fa-fw"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-down fa-fw"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="counts-answered ">
+                                    <div class="mini-counts"><span>0</span></div>
+                                    <span>trả lời</span>
+                                </div>
+
+                                <div class="counts-views text-danger">
+                                    <div class="mini-counts"><span>297</span></div>
+                                    <span>lượt xem</span>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <a href="/q/dong-goi-du-lieu-voi-thuoc-tinh-phan-so-max-trong-c-54366">
+                                    <h4 class="h5 mb-5">
+                                        <span class="mark-lookup">Đóng gói dữ liệu với thuộc tính Phân số Max trong C#</span>
+                                    </h4>
+                                </a>
+                                <div class="mb-5">
+                                    
+    <a href="/tags/khanhbao13121980gmailcom-51545" class="post-tag">khanhbao13121980@gmail.com</a>
+
+                                </div>
+                                <div class="font-size-xs mb-5 text-muted">
+                                    <span>
+                                        <a href="/users/1100688d-c156-48f4-8c88-3bf43e3fbc95">
+                                            <img src="/Content/images/avatar/avatar.png" class="avatar-xs mr-5 d-inline">
+                                            <span>Kh&#225;nh Bảo</span>
+                                        </a>
+                                        <span>đ&#227; hỏi</span>
+                                        <em class="format-time font-w600" title=" 2024-04-06 14:59:03">2024-04-06 14:59:03</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="question-summary">
+                            <div class="counts">
+                                <div class="counts-votes">
+                                    <div class="counts-votes-num">
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-up fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-down fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counts-votes-arrow">
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-up fa-fw"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-down fa-fw"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="counts-answered ">
+                                    <div class="mini-counts"><span>0</span></div>
+                                    <span>trả lời</span>
+                                </div>
+
+                                <div class="counts-views text-danger">
+                                    <div class="mini-counts"><span>321</span></div>
+                                    <span>lượt xem</span>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <a href="/q/cach-dem-so-luong-hinh-theo-loai-hinh-54365">
+                                    <h4 class="h5 mb-5">
+                                        <span class="mark-lookup">cách đếm số lượng hình  theo loại hình</span>
+                                    </h4>
+                                </a>
+                                <div class="mb-5">
+                                    
+    <a href="/tags/c-3" class="post-tag">c#</a>
+
+                                </div>
+                                <div class="font-size-xs mb-5 text-muted">
+                                    <span>
+                                        <a href="/users/74b3d579-3bb3-4619-b062-30d172bbf581">
+                                            <img src="/Content/images/avatar/avatar.png" class="avatar-xs mr-5 d-inline">
+                                            <span>NguyenNhatMinh1234</span>
+                                        </a>
+                                        <span>đ&#227; hỏi</span>
+                                        <em class="format-time font-w600" title=" 2024-04-04 10:44:21">2024-04-04 10:44:21</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="question-summary">
+                            <div class="counts">
+                                <div class="counts-votes">
+                                    <div class="counts-votes-num">
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-up fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-down fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counts-votes-arrow">
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-up fa-fw"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-down fa-fw"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="counts-answered ">
+                                    <div class="mini-counts"><span>0</span></div>
+                                    <span>trả lời</span>
+                                </div>
+
+                                <div class="counts-views text-danger">
+                                    <div class="mini-counts"><span>341</span></div>
+                                    <span>lượt xem</span>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <a href="/q/cho-2-timer-chay-luan-phien-cuu-ko-chay-dc-54364">
+                                    <h4 class="h5 mb-5">
+                                        <span class="mark-lookup">cho 2 timer chạy luân phiên (cứu-ko chạy đc)</span>
+                                    </h4>
+                                </a>
+                                <div class="mb-5">
+                                    
+    <a href="/tags/c-51308" class="post-tag">@c</a>
+
+                                </div>
+                                <div class="font-size-xs mb-5 text-muted">
+                                    <span>
+                                        <a href="/users/22333aab-22f6-4c65-a3e3-a5063f80474e">
+                                            <img src="/Content/images/avatar/avatar.png" class="avatar-xs mr-5 d-inline">
+                                            <span>VHH0000</span>
+                                        </a>
+                                        <span>đ&#227; hỏi</span>
+                                        <em class="format-time font-w600" title=" 2024-04-02 20:19:27">2024-04-02 20:19:27</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="question-summary">
+                            <div class="counts">
+                                <div class="counts-votes">
+                                    <div class="counts-votes-num">
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-up fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-down fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counts-votes-arrow">
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-up fa-fw"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-down fa-fw"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="counts-answered ">
+                                    <div class="mini-counts"><span>0</span></div>
+                                    <span>trả lời</span>
+                                </div>
+
+                                <div class="counts-views text-danger">
+                                    <div class="mini-counts"><span>233</span></div>
+                                    <span>lượt xem</span>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <a href="/q/muon-hoi-khoa-hoc-tu-a-den-z-ve-lap-trinh-phan-mem-di-dong-54363">
+                                    <h4 class="h5 mb-5">
+                                        <span class="mark-lookup">Muốn hỏi khóa học từ A đến Z về lập trình phần mềm di động</span>
+                                    </h4>
+                                </a>
+                                <div class="mb-5">
+                                    
+    <a href="/tags/hoidap-51430" class="post-tag">#hoidap</a>
+    <a href="/tags/hoibai-51465" class="post-tag">#hoibai</a>
+
+                                </div>
+                                <div class="font-size-xs mb-5 text-muted">
+                                    <span>
+                                        <a href="/users/46612ee2-f739-4832-82db-485be9bc966d">
+                                            <img src="/Content/images/avatar/avatar.png" class="avatar-xs mr-5 d-inline">
+                                            <span>ZackGames</span>
+                                        </a>
+                                        <span>đ&#227; hỏi</span>
+                                        <em class="format-time font-w600" title=" 2024-03-30 05:32:39">2024-03-30 05:32:39</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="question-summary">
+                            <div class="counts">
+                                <div class="counts-votes">
+                                    <div class="counts-votes-num">
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-up fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-down fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counts-votes-arrow">
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-up fa-fw"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-down fa-fw"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="counts-answered ">
+                                    <div class="mini-counts"><span>0</span></div>
+                                    <span>trả lời</span>
+                                </div>
+
+                                <div class="counts-views text-danger">
+                                    <div class="mini-counts"><span>233</span></div>
+                                    <span>lượt xem</span>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <a href="/q/tin-hoc-lop-11-54362">
+                                    <h4 class="h5 mb-5">
+                                        <span class="mark-lookup">Tin học lớp 11</span>
+                                    </h4>
+                                </a>
+                                <div class="mb-5">
+                                    
+    <a href="/tags/c-51308" class="post-tag">@c</a>
+
+                                </div>
+                                <div class="font-size-xs mb-5 text-muted">
+                                    <span>
+                                        <a href="/users/a6e595c1-e199-43a9-9d0a-e5b6d96f26fc">
+                                            <img src="/Content/images/avatar/avatar.png" class="avatar-xs mr-5 d-inline">
+                                            <span>Hien Tran</span>
+                                        </a>
+                                        <span>đ&#227; hỏi</span>
+                                        <em class="format-time font-w600" title=" 2024-03-29 22:01:21">2024-03-29 22:01:21</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="question-summary">
+                            <div class="counts">
+                                <div class="counts-votes">
+                                    <div class="counts-votes-num">
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-up fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-down fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counts-votes-arrow">
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-up fa-fw"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-down fa-fw"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="counts-answered ">
+                                    <div class="mini-counts"><span>0</span></div>
+                                    <span>trả lời</span>
+                                </div>
+
+                                <div class="counts-views text-danger">
+                                    <div class="mini-counts"><span>151</span></div>
+                                    <span>lượt xem</span>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <a href="/q/khong-bat-duoc-quyen-truy-cap-cua-ung-dung-kem-an-toan-gmail-54361">
+                                    <h4 class="h5 mb-5">
+                                        <span class="mark-lookup">Không bật được Quyền truy cập của ứng dụng kém an toàn gmail</span>
+                                    </h4>
+                                </a>
+                                <div class="mb-5">
+                                    
+    <a href="/tags/gmail-756" class="post-tag">gmail</a>
+    <a href="/tags/keylogger-9549" class="post-tag">keylogger</a>
+
+                                </div>
+                                <div class="font-size-xs mb-5 text-muted">
+                                    <span>
+                                        <a href="/users/f32ac11a-a148-4ebc-8e2f-f63cc34cb18e">
+                                            <img src="/Content/images/avatar/avatar.png" class="avatar-xs mr-5 d-inline">
+                                            <span>thinhthinhj</span>
+                                        </a>
+                                        <span>đ&#227; hỏi</span>
+                                        <em class="format-time font-w600" title=" 2024-03-29 16:02:09">2024-03-29 16:02:09</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="question-summary">
+                            <div class="counts">
+                                <div class="counts-votes">
+                                    <div class="counts-votes-num">
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-up fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-down fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counts-votes-arrow">
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-up fa-fw"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-down fa-fw"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="counts-answered ">
+                                    <div class="mini-counts"><span>0</span></div>
+                                    <span>trả lời</span>
+                                </div>
+
+                                <div class="counts-views text-danger">
+                                    <div class="mini-counts"><span>316</span></div>
+                                    <span>lượt xem</span>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <a href="/q/muon-hoc-va-tim-viec-voi-c-54360">
+                                    <h4 class="h5 mb-5">
+                                        <span class="mark-lookup">Muốn học và tìm việc với C#</span>
+                                    </h4>
+                                </a>
+                                <div class="mb-5">
+                                    
+    <a href="/tags/c-3" class="post-tag">c#</a>
+    <a href="/tags/aspnet-14" class="post-tag">asp.net</a>
+
+                                </div>
+                                <div class="font-size-xs mb-5 text-muted">
+                                    <span>
+                                        <a href="/users/e71e21bb-b98a-47af-8994-51ecb5a05285">
+                                            <img src="/Content/images/avatar/avatar.png" class="avatar-xs mr-5 d-inline">
+                                            <span>ngoctoan2777</span>
+                                        </a>
+                                        <span>đ&#227; hỏi</span>
+                                        <em class="format-time font-w600" title=" 2024-03-29 02:39:45">2024-03-29 02:39:45</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="question-summary">
+                            <div class="counts">
+                                <div class="counts-votes">
+                                    <div class="counts-votes-num">
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-up fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-down fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counts-votes-arrow">
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-up fa-fw"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-down fa-fw"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="counts-answered ">
+                                    <div class="mini-counts"><span>0</span></div>
+                                    <span>trả lời</span>
+                                </div>
+
+                                <div class="counts-views text-danger">
+                                    <div class="mini-counts"><span>147</span></div>
+                                    <span>lượt xem</span>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <a href="/q/tao-open-file-location-cho-installer-project-visual-studio-54359">
+                                    <h4 class="h5 mb-5">
+                                        <span class="mark-lookup">tạo open file location cho installer project visual studio</span>
+                                    </h4>
+                                </a>
+                                <div class="mb-5">
+                                    
+    <a href="/tags/c-3" class="post-tag">c#</a>
+    <a href="/tags/winforms-57" class="post-tag">winforms</a>
+    <a href="/tags/windows-installer-802" class="post-tag">windows-installer</a>
+
+                                </div>
+                                <div class="font-size-xs mb-5 text-muted">
+                                    <span>
+                                        <a href="/users/537a115d-075d-43df-a69b-e343e6118723">
+                                            <img src="/Content/images/avatar/avatar.png" class="avatar-xs mr-5 d-inline">
+                                            <span>congdk</span>
+                                        </a>
+                                        <span>đ&#227; hỏi</span>
+                                        <em class="format-time font-w600" title=" 2024-03-28 20:22:13">2024-03-28 20:22:13</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="question-summary">
+                            <div class="counts">
+                                <div class="counts-votes">
+                                    <div class="counts-votes-num">
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-up fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-down fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counts-votes-arrow">
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-up fa-fw"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-down fa-fw"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="counts-answered ">
+                                    <div class="mini-counts"><span>0</span></div>
+                                    <span>trả lời</span>
+                                </div>
+
+                                <div class="counts-views text-danger">
+                                    <div class="mini-counts"><span>137</span></div>
+                                    <span>lượt xem</span>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <a href="/q/phat-trien-them-chuc-nang-in-hoa-don-54358">
+                                    <h4 class="h5 mb-5">
+                                        <span class="mark-lookup">Phát triển thêm chức năng in hóa đơn</span>
+                                    </h4>
+                                </a>
+                                <div class="mb-5">
+                                    
+    <a href="/tags/c-winform-51415" class="post-tag">#c#-winform</a>
+
+                                </div>
+                                <div class="font-size-xs mb-5 text-muted">
+                                    <span>
+                                        <a href="/users/7dedab86-d5d6-4d6b-9eb9-a82f6d416ed3">
+                                            <img src="/Content/images/avatar/avatar.png" class="avatar-xs mr-5 d-inline">
+                                            <span>ThachTruong</span>
+                                        </a>
+                                        <span>đ&#227; hỏi</span>
+                                        <em class="format-time font-w600" title=" 2024-03-25 22:20:52">2024-03-25 22:20:52</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="question-summary">
+                            <div class="counts">
+                                <div class="counts-votes">
+                                    <div class="counts-votes-num">
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-up fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <span>1</span>
+                                            <i class="fas fa-caret-down fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counts-votes-arrow">
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-up fa-fw"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-down fa-fw"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="counts-answered counts-bordered">
+                                    <div class="mini-counts"><span>1</span></div>
+                                    <span>trả lời</span>
+                                </div>
+
+                                <div class="counts-views text-danger">
+                                    <div class="mini-counts"><span>185</span></div>
+                                    <span>lượt xem</span>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <a href="/q/ngon-ngu-python-54357">
+                                    <h4 class="h5 mb-5">
+                                        <span class="mark-lookup">ngôn ngữ python</span>
+                                    </h4>
+                                </a>
+                                <div class="mb-5">
+                                    
+    <a href="/tags/c-51308" class="post-tag">@c</a>
+
+                                </div>
+                                <div class="font-size-xs mb-5 text-muted">
+                                    <span>
+                                        <a href="/users/db33537b-4adf-4987-a48d-cf105a7631a5">
+                                            <img src="/Content/images/avatar/avatar.png" class="avatar-xs mr-5 d-inline">
+                                            <span>K.Minh2008</span>
+                                        </a>
+                                        <span>đ&#227; hỏi</span>
+                                        <em class="format-time font-w600" title=" 2024-03-25 20:50:33">2024-03-25 20:50:33</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="question-summary">
+                            <div class="counts">
+                                <div class="counts-votes">
+                                    <div class="counts-votes-num">
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-up fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <span>0</span>
+                                            <i class="fas fa-caret-down fa-fw d-inline-block d-sm-none mr-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="counts-votes-arrow">
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-up fa-fw"></i>
+                                        </div>
+                                        <div class="mini-counts">
+                                            <i class="fas fa-caret-down fa-fw"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="counts-answered counts-bordered">
+                                    <div class="mini-counts"><span>1</span></div>
+                                    <span>trả lời</span>
+                                </div>
+
+                                <div class="counts-views text-danger">
+                                    <div class="mini-counts"><span>108</span></div>
+                                    <span>lượt xem</span>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <a href="/q/cho-minh-hoi-voi-54356">
+                                    <h4 class="h5 mb-5">
+                                        <span class="mark-lookup">Cho mình hỏi với</span>
+                                    </h4>
+                                </a>
+                                <div class="mb-5">
+                                    
+    <a href="/tags/python-7" class="post-tag">python</a>
+
+                                </div>
+                                <div class="font-size-xs mb-5 text-muted">
+                                    <span>
+                                        <a href="/users/73f81088-68b5-4974-bb6a-e7cfafb083f5">
+                                            <img src="https://res.cloudinary.com/howkteam/image/upload/c_fill,g_face,h_120,w_120/v1711295210/avatar_user/jb9gae2wwazr1r4iaooo.jpg" class="avatar-xs mr-5 d-inline">
+                                            <span>Bệunhh</span>
+                                        </a>
+                                        <span>đ&#227; hỏi</span>
+                                        <em class="format-time font-w600" title=" 2024-03-24 22:41:04">2024-03-24 22:41:04</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+
+
+                    
+
+        <ul class="pagination mt-20">
+                                    <li class="page-item active">
+                            <a class="page-link" href="javascript:void(0)">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="/question?page=2">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="/question?page=3">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="/question?page=4">4</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="/question?page=5">5</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="/question?page=6">6</a>
+                        </li>
+                        <li class="page-item disabled">
+                            <a class="page-link" href="javascript:void(0)">...</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="/question?page=152">152</a>
+                        </li>
+
+
+                <li class="page-item">
+                    <a class="page-link" href="/question?page=2">
+                        <span aria-hidden="true">
+                            <i class="fa fa-angle-double-right"></i>
+                        </span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </li>
+        </ul>
+
+
+
+                </div>
+            </div>
+
+            
+<div class="my-15">
+    <!-- QC Ngang -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-4680711340186781"
+         data-ad-slot="1293612754"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+        //window.addEventListener('load', function () {
+        //    (adsbygoogle = window.adsbygoogle || []).push({});
+        //});
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+            <!-- END Results -->
+        </div>
+       
+
+
+<div class="w3-container" id="contact">
+      <h2>Contact</h2>
+      <h5>If you have any questions, do not hesitate to ask them.</h5>
+      <i class="fa fa-map-marker w3-text-red" style="width:30px"></i> Thu Duc, TPHCM<br>
+      <i class="fa fa-phone w3-text-red" style="width:30px"></i> Phone: 0942942172<br>
+      <i class="fa fa-envelope w3-text-red" style="width:30px"> </i> Email: 22520692@gm.uit.edu.vn<br>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+        <p><button class="w3-button w3-black w3-padding-large" type="submit">SEND MESSAGE</button></p>
+      </form>
+    </div>
+  
+  <!-- End page content -->
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-padding-32 w3-black w3-center w3-margin-top" >
+    
+    <h5>Find Us On</h5>
+    <div class="w3-xlarge w3-padding-16">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  </footer>
+
+      <!-- Hero Start -->
+       <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="/js/common?v=5WmZiv4HuIV-gt1ets7IC2aEarKWhzqG_TwZPwLi1TQ1"></script>
+
+
+  <script src="/js/cmt?v=65dISZQsn5VeLZedj3SFRm92FDw6tiXebwIpHpvT1nY1"></script>
+
+  <script>
+    function goToModules() {
+        window.location.href = "modules.ejs"; // Điều hướng đến trang giao diện "modules.html"
+    }
+    function goToResources() {
+        window.location.href = "resources.ejs"; // Điều hướng đến trang giao diện "modules.html"
+    }
+    function goTologin() {
+        window.location.href = "login.ejs"; // Điều hướng đến trang giao diện "modules.html"
+    }
+   
+    function goTohome() {
+        window.location.href = "home.ejs"; // Điều hướng đến trang giao diện "modules.html"
+    }
+    function gotoOurteam(){
+      window.location.href = "Our-team.ejs"; 
+    }
+  </script>
+    <script>
+      const header = document.querySelector("header");
+      const menuToggler = document.querySelectorAll("#menu_toggle");
+
+      menuToggler.forEach(toggler => {
+        toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+      });
+    </script>
+
+  </body>
+</html>
+
+
